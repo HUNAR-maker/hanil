@@ -1,0 +1,9 @@
+/*
+  HUNAR security response headers for hosts that support a _headers file
+  (for example, Cloudflare Pages). No aggressive CSP is included because
+  HUNAR currently uses inline scripts, external fonts, Supabase, and Jitsi.
+*/
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: geolocation=(), camera=(self "https://meet.jit.si"), microphone=(self "https://meet.jit.si")
